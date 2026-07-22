@@ -19,15 +19,15 @@ connected server and are never resolved on the TUI host.
 Install from a reviewed full commit SHA. Do not use a mutable branch or tag.
 
 ```sh
-REVISION=<full-commit-sha>
-opencode plugin "git+https://github.com/krafczyk/opencode-project-reload.git#$REVISION"
+REVISION=912b176a38ec7157c3a8e90d88773178848fa8c8
+opencode plugin "https://github.com/krafczyk/opencode-project-reload/archive/$REVISION.tar.gz"
 ```
 
 Run the command from a project to install locally, or add `--global` to install
 for all projects:
 
 ```sh
-opencode plugin --global "git+https://github.com/krafczyk/opencode-project-reload.git#$REVISION"
+opencode plugin --global "https://github.com/krafczyk/opencode-project-reload/archive/$REVISION.tar.gz"
 ```
 
 Restart an already-running TUI after installation so it loads the new TUI
